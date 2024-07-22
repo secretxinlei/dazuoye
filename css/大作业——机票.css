@@ -1,0 +1,115 @@
+   body {
+            font-family: '微软雅黑';
+        }
+       .photo{
+       	margin-top: 10px;
+       	width: 100px;
+       	height: 125px;
+       }
+       .fengjing{
+       	margin-left: 50px;
+       	width: 1500px;
+       	height: 150px; 
+       }
+		.h_top_right{
+			font-size: 25px;
+		     background: url(../images/320.jpg);
+			 text-align: center;
+		}
+		.h_top_left{
+			font-size: 50px;
+			font-family: "微软雅黑";
+			font-weight: 100 bolder;
+			background-color: #DCF3FA;
+		
+		}
+        nav {
+            display: flex;
+            justify-content: space-around;
+            background-color: #333;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 14px 20px;
+        }
+        nav a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+        section {
+            padding: 50px;
+			background-color: #DCF3FA;
+			text-align: center;
+        }
+		table{
+			 border-collapse: collapse;
+			 margin-top: 50px;
+			 margin-left: 700px;
+		}
+		th, td {
+		    padding: 10px;
+		    text-align: left;
+		    border: 1px solid #ddd;
+			}
+			th{
+				color: #DC143C;
+			}
+			tr:hover {
+			    background-color: #DCF3FA;
+			}
+			img{
+				margin-top: 35px;
+			}
+        footer {
+            background-color: #f1f1f1;
+            padding: 20px;
+            text-align: center;
+        }
+		#miaosha{
+			font-size: 20px;
+			color: #fff;
+			font-family: microsoft yahei,arial;
+		}
+		img{
+			list-style: none;
+			outline: none;
+		}
+		.img-box{
+			position: relative;
+			background: url(../images/限时秒杀.png);
+			width: 702px;
+			height: 378px;
+			margin: 0 auto;
+			margin-top: 50px;
+		}
+		.img-box span{
+			position: relative;
+			text-align: center;
+			line-height: 26px;
+			margin: 4px 0 0;
+		}
+		.img-box #hour{
+			left: 7%;
+			top:110%;
+		}
+		.img-box #minute{
+			left:11%;
+			top: 110%;
+		}
+		.img-box #second{
+			left:15%;
+			top: 110%;
+		}
+		#bot-box{
+			position: absolute;
+			z-index: 1;
+			top: 250px;
+			display: none;
+			width: 702px;
+			height: 51px;
+			line-height: 40px;
+			text-align: center;
+			color: #666;
+			font-size: 28px;
+		}

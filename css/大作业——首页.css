@@ -1,0 +1,153 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.all{
+	margin-left: 300px;
+}
+.h_top_right{
+	font-size: 25px;
+     background: url(../images/320.jpg);
+	 text-align: center;
+}
+.h_top_left{
+	font-size: 50px;
+	font-family: "微软雅黑";
+	font-weight: 100 bolder;
+	background-color: #DCF3FA;
+
+}
+.h_c_search{
+	background-color: #DCF3FA;
+	
+}
+.photo{
+	margin-top: 10px;
+	width: 100px;
+	height: 125px;
+}
+.fengjing{
+	margin-left: 50px;
+	width: 1500px;
+	height: 150px; 
+}
+.t_input{
+	height: 50px;
+	width: 1200px;
+	margin: 10px;
+	font-size: 30px;
+}
+.t_button{
+	height:50px ;
+	width: 100px;
+	font-size: 30px;
+}
+.mls{
+float: left; 
+width:640px; 
+margin-left:20px;
+background-color: #DCF3FA;
+overflow: hidden;
+}
+.bar{ 
+font-size:20px; 
+padding-bottom:10px;
+margin-left: 80px;
+margin-top: 10px;
+}
+.txtlist li{ 
+height:100px; 
+background:#DCF3FA; 
+padding:5px;
+ margin-bottom:20px; 
+ font-size:14px; 
+ line-height:22px
+ }
+.txtlist li img{ 
+width:120px; 
+display:block; 
+float:left; 
+margin:0 20px 0 0 
+}
+.four img{height: 100px;}
+.five img{height: 100px;}
+.rank {
+background-color: #DCF3FA;
+float: left;
+}
+.rank li {
+    margin-bottom: 20px;
+	overflow: hidden;
+}
+.rank li:hover .rank-name {
+    color: #FF8D1B;
+}
+.rank .rank-num {
+    width: 20px;
+    height: 20px;
+    line-height: 20px;
+    font-size: 16px;
+    text-align: center;
+    color: #999;
+}
+.rank .rank-top3 {
+    border-radius: 3px;
+    color: #fff;
+    background-color: #FF8D1B;
+}
+.rank .rank-name {
+    padding-left: 10px;
+    font-size: 16px;
+    color: #2d3237;
+}
+.rank .box-office {
+    float: right;
+    font-size: 14px;
+    color: #ff6000;
+}
+#ms{
+    width: 1920px;
+background-color: #DCF3FA;
+}
+#ms .ms_body{
+    width: 1900px;
+    display: flex;
+    margin: 0 auto;
+}
+#ms .ms_body li{
+    margin: 10px auto;
+    margin-left: 20px;
+    margin-bottom: 20px;
+    border: 1px solid darkgray;
+    border-radius: 8px 8px 8px 8px;
+}
+#ms .ms_body li p.name{
+    padding-left: 10px;
+    display: block;
+    margin-top: 20px;
+    font-size: 25px;
+    font-weight: bold;
+    color: gray;
+}
+#ms .ms_body img{
+    width: 500px;
+    height: 350px;
+}
+#ms .ms_body_left ul{
+    list-style: none;
+    padding-left: 10px;
+    margin-top: 20px;
+}
+.page-icon{
+	text-align: right;
+}
+.page-icon{
+	background-color: #DCF3FA;
+}
+.end{
+	background-color: #DCF3FA;
+}
+
+
+
+

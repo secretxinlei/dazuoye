@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>旅游机票预订</title>
+	<link rel="stylesheet" type="text/css" href="../css/大作业——机票.css"/>
+</head>
+<body>
+	<div id="header">
+	            <div class="h_top_left">
+					<img class="photo" src="../images/logo.png" >
+					<img class="fengjing" src="../images/风景如画.png" >
+	            </div>
+	            <div class="h_top_right">
+	              <a href="#">旅游路线推荐</a>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+	              <a href="大作业——机票.html">机票查询</a>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+	               <a href="大作业——注册.html">景点欣赏</a>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+	               <a href="大作业——登录.html">游客登录</a>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+	            </div>
+	</div>
+    <section>
+			<h2>机票查询</h2>
+        <form>
+            <label for="departure">出发地：</label>
+            <input type="text" id="departure" name="departure">
+            <label for="destination">目的地：</label>
+            <input type="text" id="destination" name="destination">
+            <label for="date">日期：</label>
+            <input type="date" id="date" name="date">
+            <button type="submit">查询</button>
+        </form>
+		<div id="ticket">
+			<table>
+			        <tr>
+			            <th>航班号</th>
+			            <th>出发地</th>
+			            <th>目的地</th>
+			            <th>起飞时间</th>
+			            <th>到达时间</th>
+			            <th>价格</th>
+			        </tr>
+			        <tr>
+			            <td>CA123</td>
+			            <td>北京</td>
+			            <td>上海</td>
+			            <td>08:00</td>
+			            <td>10:00</td>
+			            <td>￥1000</td>
+			        </tr>
+			        <tr>
+			            <td>MU456</td>
+			            <td>上海</td>
+			            <td>广州</td>
+			            <td>12:00</td>
+			            <td>14:00</td>
+			            <td>￥1200</td>
+			        </tr>
+			        <tr>
+			            <td>CZ789</td>
+			            <td>广州</td>
+			            <td>深圳</td>
+			            <td>16:00</td>
+			            <td>18:00</td>
+			            <td>￥1400</td>
+			        </tr>
+					<tr>
+					    <td>CZ789</td>
+					    <td>深圳</td>
+					    <td>广州</td>
+					    <td>15:00</td>
+					    <td>18:00</td>
+					    <td>￥1900</td>
+					</tr>
+					<tr>
+			            <td>CZ789</td>
+			            <td>杭州</td>
+			            <td>厦门</td>
+			            <td>16:00</td>
+			            <td>18:00</td>
+			            <td>￥2400</td>
+			        </tr>
+			</table>
+		</div>
+		<div onload="fresh()" id="miaosha">
+			<div class="img-box">
+				<span id="hour"></span>
+				<span id="minute"></span>
+				<span id="second"></span>
+				<div id="bot-box"></div>
+			</div>
+			<script type="text/javascript">
+				function fresh(){
+					var endtime=new Date("2023/12/22,17:26:00");
+					var nowtime=new Date();
+					var leftsecond=parseInt((endtime.getTime()-nowtime.getTime())/1000);
+					h=parseInt(leftsecond/3600);
+					m=parseInt((leftsecond/60)%60);
+					s=parseInt(leftsecond%60);
+					if(h<10) h="0"+h;
+					if(m<10&&m>=0)m="0"+m;else if(m<0) m="00";
+					if(s<10&&s>=0)s="0"+s;else if(s<0) s="00";
+					document.getElementById("hour").innerHTML=h;
+					document.getElementById("minute").innerHTML=m;
+					document.getElementById("second").innerHTML=s;
+					if(leftsecond<=0){
+						document.getElementById("bot-box").style.display="block";
+						document.getElementById("bot-box").style.background="url(../images/flash_end.png)";
+						document.getElementById("bot-box").innerHTML="秒杀已结束";
+						clearInterval(sh);
+					}
+				}
+				  var sh=setInterval(fresh,1000);
+			</script>
+			
+		</div>
+		<img src="../images/计时.png" >
+    </section>
+    <footer>	
+        <p>版权所有 &copy; 2023 旅游机票预订网站</p>
+    </footer>
+</body>
+</html>

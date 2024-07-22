@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>登录</title>
+  <link rel="stylesheet" type="text/css" href="../css/大作业——登录.css"/>
+</head>
+
+<body>
+	<!-- content begin -->
+    <div class="content">
+        <div class="login-content">
+            <a href="#" class="banner-box"></a>
+            <div class="login-box">
+                <h1>账号登录</h1>
+                <input type="text" id="username" value="账号"/> <!-- 账号输入 -->
+                <input type="text" id="password" value="密码"/> <!-- 密码输入 -->
+                <input type="button" id="L_login" value="登录"  onclick="return checkuser()"/>
+                <form action="#" id="login">
+                    <div class="forgot_password">
+                        <a href="#">忘记密码</a>
+                        <a href="#">注册账号</a>
+                        <a href="#">帮助</a>
+                    </div>
+                </form>
+            </div>
+    </div>  
+	<!-- content end -->
+</body>
+<!-- js begin -->
+<script type="text/javascript"> 
+    function getValue(id) { 
+        return document.getElementById(id).value; 
+        // 查找元素
+    } 
+    function checkuser() { 
+        if(getValue('username') == "张欣蕾" && getValue('password') == "123") 
+        { 
+			window.location.href="大作业——首页.html"
+            return true; 
+        }else { 
+            alert("登录名或密码错误！")
+            // 警告框
+            return false; 
+        }
+    } 
+</script> 
+<!-- js end -->
+</html>
